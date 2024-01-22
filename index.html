@@ -7,10 +7,92 @@
     <!--tailwind and daisy ui-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!--manrope-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!--font awsome-->
+<script src="https://kit.fontawesome.com/8edeb1fa17.js" crossorigin="anonymous"></script>
+<!--ionicon-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          
+        }
+
+      }
+    }
+}
+  </script>
+<style>
+    .font-manrope{
+font-family: 'Manrope', sans-serif;
+    }
+</style>
 
 
 </head>
-<body>
-    
+
+<body class="font-manrope">
+    <header class="container mx-auto bg-white">
+        <!--nav bar section-->
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <h2 class="text-black font-bold text-3xl">Hockey<span class="text-red-500">'</span>s</h2>   
+            </div>
+                <div class="sm:nav-links md:static absolute bg-white sm:min-h-fit min-h-20 left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                    <ul class="flex sm:flex-row flex-col sm:items-center sm:gap-10 gap-8 text-.2xl">
+                        <li><a class="hover:text-red-500" href="#"> <span class="text-red-500">Home</span></a></li>
+                        <li><a class="hover:text-gray-500" href="#">About</a></li>
+                        <li><a class="hover:text-gray-500" href="#">Pages</a></li>
+                        <li> <a class="hover:text-gray-500" href="#">Blog</a></li>
+                        <li> <a class="hover:text-gray-500" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-6">
+                <div class="flex items-center gap-1">
+                <img src="Images/Frame (1).png" alt="">
+                <button class="bg-[#FF4240] text-white px-5 py-2 rounded-full">
+                    Get Ticket
+                 </button>
+                </div>
+                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon> 
+                 </div>
+                 </div>
+            </div>
+        </nav>
+     <script>
+
+         function onToggleMenu(e) {
+            const navLinks = document.querSelector('.nav-links')
+            e.name = e.name == 'menu' ? 'close' : 'menu',
+            navLinks.classList.toggle(top-[9%])
+         }
+     </script>
+     <!--banner section-->
+     <section class="text-center my-24">
+        <div class="hero min-h-screen" style="background-image: url(Images/1.png);"
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="btn btn-primary">Get Started</button>
+              </div>
+            </div>
+          </div>
+     </section>
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
